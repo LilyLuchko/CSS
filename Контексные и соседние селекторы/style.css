@@ -1,0 +1,9 @@
+.shooter-1 li, .shooter-2 li {
+  background-color: white;
+}
+.shooter-1 .third + li, .shooter-2 .first + li{
+  background-color: red;
+}
+.shooter-2 .third + li {
+  background-color: yellow;
+}
