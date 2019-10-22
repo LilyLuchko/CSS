@@ -1,0 +1,12 @@
+/*Задайте цвет фона #ff3300 первым картам в каждой строке, но не пикам .spade.
+Задайте цвет фона #339933 картам, которые не являются ни тузом .ace, ни бубной .diamond и расположены в центре каждой строки.
+Задайте цвет фона #0099ff червям .heart, стоящим не на первой позиции в каждой строке, и не являющимся дамой .queen или валетом .jack*/
+li:first-child:not(.spade) {
+background-color: #ff3300;
+}
+li:not(.ace):not(.diamond):nth-child(4) {
+background-color: #339933;
+}
+.heart:not(:first-child):not(.queen):not(.jack) {
+background-color: #0099ff;
+}

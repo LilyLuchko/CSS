@@ -1,0 +1,48 @@
+ul {
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  padding: 0;
+  list-style: none;
+  border-right: 1px dashed #cccccc;
+  border-left: 1px dashed #cccccc;
+}
+li {
+  float: left;
+  width: 45%;
+  margin-right: 10%;
+  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: "Tahoma", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*li:nth-child(even) {
+  margin-right: 0;
+  background-color: #5EB95E;
+  color: white;
+}*/
+/*Удаляем правые отступы у четных элементов и блоки
+ выстраиваются в две колонки*/
+
+
+ /*li:nth-child(3n) {
+  margin-right: 0;
+  background-color: #5EB95E;
+  color: white;
+}*/
+
+/*Сначала изменим проценты:
+
+30% - ширина колонок
+5% - отступы справа у 1 и 2 колонки
+Итого: 30% + 5% + 30% + 5% + 30% = 100%
+
+Затем нужно удалить отступ справа у каждого 
+третьего элемента. Для этого используем li:nth-child(3n).*/

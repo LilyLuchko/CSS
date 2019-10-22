@@ -1,0 +1,29 @@
+li:nth-child(odd) {
+  color: white;
+  background-color: #4BB1CF;
+}
+li:nth-child(even) {
+  color: white;
+  background-color: #5EB95E;
+}
+ul {
+  margin: 50px;
+  padding: 0;
+  list-style: none;
+}
+li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: "Tahoma", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
