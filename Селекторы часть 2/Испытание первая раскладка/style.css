@@ -1,0 +1,58 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  min-width: 550px;
+  min-height: 250px;
+  padding: 10px;
+  padding-left: 21px;
+}
+
+.cards {
+  width: 500px;
+}
+
+.cards li::before {
+  font-family: "Courier", monospace;
+}
+
+.cards li{
+  margin-left: -15px;
+}
+
+.cards li {
+  width: 36px;
+  height: 54px;
+}
+.cards li:nth-of-type(4) {
+ width: 50px;
+ height: 60px;
+}
+ul li:nth-of-type(4) {
+  margin-right: 30px;
+  margin-left: 15px;
+}
+/*красим все буби в синий*/
+.diamond {
+  background-color: #0099ff;
+}
+/*возвращаем 9 буби и бубновому королю белый цвет*/
+ul:nth-of-type(1) li:nth-of-type(4), ul:nth-of-type(4) li:nth-last-of-type(2) {
+ background-color: white; 
+}
+/*красим в красный второй ряд карт*/
+ul li:nth-of-type(2) {
+  background-color: #ff3300;
+}
+/*делаем белой семерку крести*/
+ul:nth-of-type(2) li:nth-of-type(2) {
+ background-color: white; 
+}
+
+ul:nth-last-of-type(1) li:nth-of-type(3),ul:nth-last-of-type(1) li:nth-of-type(6),ul:nth-last-of-type(1) li:nth-last-of-type(1) {
+  background-color: #339933;
+}

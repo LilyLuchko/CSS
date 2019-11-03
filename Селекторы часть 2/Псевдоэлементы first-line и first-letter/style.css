@@ -1,0 +1,21 @@
+/*
+В Safari и старых версиях Firefox результат
+работы псевдоэлементов может не отображаться,
+хотя проверки при этом будут работать.
+В Chrome отображается и результат, и работают проверки.
+*/
+.paper>p::first-line {
+ font-style: italic; 
+}
+p::first-letter {
+ font-size: 30px;
+ line-height: 30px;
+ float: left;
+ color: red;
+ margin-right: 5px;
+ font-family: "Times New Roman", serif;
+}
+/*Сделайте написание первой строки абзацев курсивным.
+Задайте первой букве абзацев размер шрифта и высоту строки 30px
+свойство float: left цвет текста red внешний отступ справа 5px и 
+шрифт "Times New Roman", serif*/

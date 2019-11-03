@@ -1,0 +1,24 @@
+.card::after {
+  position: relative;
+  content: "A";
+  font-size: 30px;
+  color: #e50000;
+  width: 160px;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.card::before {
+  content: "A";
+  font-size: 30px;
+  color: #e50000;
+}
+/*Добавьте карте .card псевдоэлемент before и задайте ему:
+
+содержание A (в латинской раскладке),
+размер шрифта 30px
+цвет текста #e50000*/
